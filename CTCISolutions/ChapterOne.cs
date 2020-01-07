@@ -59,17 +59,19 @@ namespace CTCISolutions
         //Better solution in which we add each character to a HashSet and check for its presence therein
         public bool IsUniqueBetter(string str)
         {
-            HashSet<char> dict = new HashSet<char>();
+            HashSet<char> hastSet = new HashSet<char>();
             for (int i = 0; i <= str.Length - 1; i++)
             {
-                if (dict.Contains(str[i])) return false;
-                dict.Add(str[i]);
+                if (hastSet.Contains(str[i])) return false;
+                hastSet.Add(str[i]);
             }
             return true;
         }
         #endregion
 
         #region String Compression Implementation(s)
+        //Progresses through input counting occurences of the current repeated character, appending the character and its occurence count
+        //Finally, returns the compressed string if its shorter than the input, else returns the input
         public string compressString(string input)
         {
             StringBuilder sb = new StringBuilder();
