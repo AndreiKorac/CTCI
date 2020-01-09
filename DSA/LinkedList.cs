@@ -60,15 +60,17 @@ namespace DSA
             }
         }
 
-        public void PrintList()
+        public bool Contains(int d)
         {
             Node current = Head;
-            while(current != null)
+
+            for(int i = 0; i < Count; i++)
             {
-                Console.WriteLine(current.data);
+                if (current.data == d)
+                    return true;
                 current = current.next;
             }
-            Console.WriteLine("Count is: " + Count);
+            return false;
         }
     }
 
