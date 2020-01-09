@@ -12,9 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		readme.md = readme.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSA", "..\DataStructurePractice\DataStructures\DSA.csproj", "{3C2582AA-08E9-4CE0-8CD8-D7E2D2858EDC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSATests", "DSATests\DSATests.csproj", "{2BFF2022-9F47-4466-AB35-729D6C49EA0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA", "DSA\DSA.csproj", "{FA99A676-B875-4AFE-807F-E67D1E53DB06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,14 +30,14 @@ Global
 		{EA2E1645-77D6-42EA-ACFA-4A3A862B2CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA2E1645-77D6-42EA-ACFA-4A3A862B2CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA2E1645-77D6-42EA-ACFA-4A3A862B2CCD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C2582AA-08E9-4CE0-8CD8-D7E2D2858EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C2582AA-08E9-4CE0-8CD8-D7E2D2858EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C2582AA-08E9-4CE0-8CD8-D7E2D2858EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C2582AA-08E9-4CE0-8CD8-D7E2D2858EDC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2BFF2022-9F47-4466-AB35-729D6C49EA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2BFF2022-9F47-4466-AB35-729D6C49EA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BFF2022-9F47-4466-AB35-729D6C49EA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BFF2022-9F47-4466-AB35-729D6C49EA0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA99A676-B875-4AFE-807F-E67D1E53DB06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA99A676-B875-4AFE-807F-E67D1E53DB06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA99A676-B875-4AFE-807F-E67D1E53DB06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA99A676-B875-4AFE-807F-E67D1E53DB06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
