@@ -2,7 +2,8 @@
 
 This repository is a (currently in-progress) collection of solutions to various questions in Cracking the Coding Interview.
 
-It is structured as two C# class libraries, one containing classes per chapter with the implementations within, one containing unit tests written in NUnit corresponding to the implementations.
+it contains two pairs of projects, each of which is a class library with corresponding unit test library.
 
-This repo is essentially a copy-over of an old repo of CTCI solutions/tests I started a month or two ago. 
-Its purpose was to brush up on data structures, algorithms, and whiteboard-type questions, whilst also practicing unit testing.
+The first is the actual solutions I wrote to the problems in the book, with a set of unit tests I wrote alongside their implementation.
+
+The second is a library of assorted data structures and algorithms I wrote as practice over the course of each chapter, again with corresponding unit tests.
