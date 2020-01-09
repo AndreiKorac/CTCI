@@ -3,14 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTCISolutions", "CTCISolutions\CTCISolutions.csproj", "{96C578AF-444C-4AEC-B74A-B39B8261F151}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CTCISolutions", "CTCISolutions\CTCISolutions.csproj", "{96C578AF-444C-4AEC-B74A-B39B8261F151}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolutionsTests", "SolutionsTests\SolutionsTests.csproj", "{EA2E1645-77D6-42EA-ACFA-4A3A862B2CCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolutionsTests", "SolutionsTests\SolutionsTests.csproj", "{EA2E1645-77D6-42EA-ACFA-4A3A862B2CCD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9988E5D-974C-4F9E-A954-78DEA822D360}"
 	ProjectSection(SolutionItems) = preProject
 		readme.md = readme.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSA", "..\DataStructurePractice\DataStructures\DSA.csproj", "{3C2582AA-08E9-4CE0-8CD8-D7E2D2858EDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSATests", "DSATests\DSATests.csproj", "{2BFF2022-9F47-4466-AB35-729D6C49EA0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +30,14 @@ Global
 		{EA2E1645-77D6-42EA-ACFA-4A3A862B2CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA2E1645-77D6-42EA-ACFA-4A3A862B2CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA2E1645-77D6-42EA-ACFA-4A3A862B2CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2582AA-08E9-4CE0-8CD8-D7E2D2858EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2582AA-08E9-4CE0-8CD8-D7E2D2858EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2582AA-08E9-4CE0-8CD8-D7E2D2858EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2582AA-08E9-4CE0-8CD8-D7E2D2858EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BFF2022-9F47-4466-AB35-729D6C49EA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BFF2022-9F47-4466-AB35-729D6C49EA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BFF2022-9F47-4466-AB35-729D6C49EA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BFF2022-9F47-4466-AB35-729D6C49EA0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
