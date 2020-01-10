@@ -3,10 +3,10 @@ using NUnit.Framework;
 
 namespace SolutionsTests
 {
-    public class Tests
+    public class ChapterOneTests
     {
         private ChapterOne _testHelper;
-        public Tests()
+        public ChapterOneTests()
         {
             _testHelper = new ChapterOne();
         }
