@@ -7,81 +7,139 @@ namespace DSA
         public Node Head { get; set; }
         public int Count { get; set; }
 
-        public void Append(int d)
+        public void InsertLast(int value)
         {
             if (Head == null)
             {
-                Head = new Node(d);
+                Head = new Node(value);
                 Count++;
             }
             else
             {
-                Node newNode = new Node(d);
+                Node newNode = new Node(value);
                 Node current = Head;
-                while (current.next != null)
+                while (current.Next != null)
                 {
-                    current = current.next;
+                    current = current.Next;
                 }
-                current.next = newNode;
+                current.Next = newNode;
                 Count++;
             }
         }
 
-        public void AppendAtIndex(int d, int index)
+        public void InsertAfter(int value, int index)
         {
             if(index > Count)
             {
                 throw new IndexOutOfRangeException("Index is out of range of List");
             }
-            Node newNode = new Node(d);
+            Node newNode = new Node(value);
             Node current = Head;
             for (int i = 0; i < index - 1; i++)
             {
-                current = current.next;
+                current = current.Next;
             }
-            newNode.next = current.next;
-            current.next = newNode;
+            newNode.Next = current.Next;
+            current.Next = newNode;
             Count++;
         }
 
-        public void Prepend(int d)
+        public void InsertStart(int value)
         {
             if(Head == null)
             {
-                Head = new Node(d);
+                Head = new Node(value);
                 Count++;
             }
             else
             {
-                Node newNode = new Node(d);
-                newNode.next = Head;
+                Node newNode = new Node(value);
+                newNode.Next = Head;
                 Head = newNode;
                 Count++;
             }
         }
 
-        public bool Contains(int d)
+        public void RemoveFirst()
+        {
+            if(Head == null)
+            {
+                throw new InvalidOperationException("Cannot remove from an empty list");
+            } 
+            if(Head.Next == null)
+            {
+                Head = null;
+                Count--;
+            }
+            else
+            {
+                Head = Head.Next;
+                Count--;
+            }
+        }
+
+        public void RemoveLast()
+        {
+            if (Head == null)
+            {
+                throw new InvalidOperationException("Cannot remove from an empty list");
+            }
+            if(Head.Next == null)
+            {
+                Head = null;
+                Count--;
+            }
+            else
+            {
+                Node current = Head;
+                while (current.Next.Next != null)
+                {
+                    current = current.Next;
+                }
+                current.Next = null;
+                Count--;
+            }
+        }
+
+        public void RemoveAtIndex()
+        {
+
+        }
+
+        public bool Contains(int value)
         {
             Node current = Head;
 
             for(int i = 0; i < Count; i++)
             {
-                if (current.data == d)
+                if (current.Value == value)
                     return true;
-                current = current.next;
+                current = current.Next;
             }
             return false;
+        }
+
+        public int ValueAt(int index)
+        {
+            if(index > Count - 1 || index < 0) throw new IndexOutOfRangeException("Index is out of range of List");
+
+            Node current = Head;
+            for (int i = 0; i < index; i++)
+            {
+                current = current.Next;
+            }
+            return current.Value;
         }
     }
 
     public class Node
     {
-        public Node next { get; set; }
-        public int data { get; set; }
+        public Node Next { get; set; }
+        public int Value { get; set; }
 
-        public Node(int d)
+        public Node(int value)
         {
-            data = d;
+            Value = value;
         }
     }
 }
