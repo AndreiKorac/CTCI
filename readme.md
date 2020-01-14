@@ -8,7 +8,7 @@ The first is the actual solutions I wrote to the problems in the book, with a se
 
 The second is a library of assorted data structures and algorithms I wrote as practice over the course of each chapter, again with corresponding unit tests.
 
-The solutions and DSA implementations (and any associated tests) are by no means exhaustive and this is a continuous learning process.
+The solutions and DSA implementations (and all associated tests) are by no means exhaustive and this is a continuous learning process.
 
 ## Usage
 
