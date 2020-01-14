@@ -16,4 +16,4 @@ Navigate into the SolutionsTests folder and run
 
 `dotnet test`
 
-To run the tests associated with the book problems (likewise with DSATests).
+To run the tests associated with the book problems (likewise for DSATests if for whatever reason you want to do that too).
