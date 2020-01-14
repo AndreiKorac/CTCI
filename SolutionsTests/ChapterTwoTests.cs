@@ -124,6 +124,48 @@ namespace SolutionsTests
             Assert.AreEqual(7, list.Head.Next.Value);
         }
 
+        [Test]
+        public void SumLists_617Plus295_Equals912()
+        {
+            LinkedList list1 = new LinkedList();
+            list1.InsertLast(7);
+            list1.InsertLast(1);
+            list1.InsertLast(6);
+
+            LinkedList list2 = new LinkedList();
+            list2.InsertLast(5);
+            list2.InsertLast(9);
+            list2.InsertLast(2);
+
+            LinkedList sumList = _testHelper.SumLists(list1, list2);
+
+            Assert.AreEqual(2, sumList.ValueAt(0));
+            Assert.AreEqual(1, sumList.ValueAt(1));
+            Assert.AreEqual(9, sumList.ValueAt(2));
+        }
+
+        [Test]
+        public void SumLists_3617Plus295_Equals3912()
+        {
+            LinkedList list1 = new LinkedList();
+            list1.InsertLast(7);
+            list1.InsertLast(1);
+            list1.InsertLast(6);
+            list1.InsertLast(3);
+
+            LinkedList list2 = new LinkedList();
+            list2.InsertLast(5);
+            list2.InsertLast(9);
+            list2.InsertLast(2);
+
+            LinkedList sumList = _testHelper.SumLists(list1, list2);
+
+            Assert.AreEqual(2, sumList.ValueAt(0));
+            Assert.AreEqual(1, sumList.ValueAt(1));
+            Assert.AreEqual(9, sumList.ValueAt(2));
+            Assert.AreEqual(3, sumList.ValueAt(3));
+        }
+
         #endregion
     }
 }

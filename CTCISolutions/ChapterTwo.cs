@@ -75,5 +75,40 @@ namespace CTCISolutions
                 input.Next = newNode.Next;
             }
         }
+
+        //This implementation uses the assumption that the numbers are stored in reverse order
+        public LinkedList SumLists(LinkedList list1, LinkedList list2)
+        {
+            LinkedList sumList = new LinkedList();
+            Node currentList1 = list1.Head;
+            Node currentList2 = list2.Head;
+            int carry = 0;
+            //Loop through the two lists side-by-side as long as at least one of them still has values
+            while(currentList1 != null || currentList2 != null)
+            {
+                //In the cases where one number/list is longer than the other, we add 0 to the other digit
+                int currentSumDigit = ((currentList1 != null) ? currentList1.Value : 0) + ((currentList2 != null) ? currentList2.Value : 0);
+                //Apply carry digit if applicable
+                if (carry == 1)
+                {
+                    currentSumDigit++;
+                    carry = 0;
+                }
+                if(currentSumDigit > 9)
+                {
+                    //Set carry for additions greater than 9 and add the 1s digit to the list
+                    carry = 1;
+                    currentSumDigit = currentSumDigit % 10;
+                    sumList.InsertLast(currentSumDigit);
+                }
+                //Otherwise just add the digit
+                else
+                    sumList.InsertLast(currentSumDigit);
+                //Incrememt the lists' references, or null when one number has been fully traversed through
+                currentList1 = currentList1?.Next;
+                currentList2 = currentList2?.Next;
+            }
+            return sumList;
+        }
     }
 }
