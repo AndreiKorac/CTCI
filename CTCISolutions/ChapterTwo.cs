@@ -110,5 +110,22 @@ namespace CTCISolutions
             }
             return sumList;
         }
+
+        public bool IsPalindrome(LinkedList input)
+        {
+            Node startNode = input.Head;
+            Node endNode = input.Tail;
+            while(startNode != endNode)
+            {
+                if (startNode.Value != endNode.Value)
+                    return false;
+                else
+                {
+                    startNode = startNode.Next;
+                    endNode = endNode.Previous;
+                }
+            }
+            return true;
+        }
     }
 }

@@ -166,6 +166,36 @@ namespace SolutionsTests
             Assert.AreEqual(3, sumList.ValueAt(3));
         }
 
+        [Test]
+        public void IsPalindrome_PalindromeList_ReturnsTrue()
+        {
+            LinkedList list = new LinkedList();
+            list.InsertLast(3);
+            list.InsertLast(1);
+            list.InsertLast(6);
+            list.InsertLast(1);
+            list.InsertLast(3);
+
+            bool isPalindrome = _testHelper.IsPalindrome(list);
+
+            Assert.IsTrue(isPalindrome);
+        }
+
+        [Test]
+        public void IsPalindrome_NonPalindromeList_ReturnsFalse()
+        {
+            LinkedList list = new LinkedList();
+            list.InsertLast(4);
+            list.InsertLast(1);
+            list.InsertLast(6);
+            list.InsertLast(1);
+            list.InsertLast(3);
+
+            bool isPalindrome = _testHelper.IsPalindrome(list);
+
+            Assert.IsFalse(isPalindrome);
+        }
+
         #endregion
     }
 }
