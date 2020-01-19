@@ -39,17 +39,19 @@ namespace DSA
 
         public int PeekFirst()
         {
+            if (First == null) throw new InvalidOperationException("Queue is empty");
             return First.Value;
         }
 
         public int PeekLast()
         {
+            if (First == null) throw new InvalidOperationException("Queue is empty");
             return Last.Value;
         }
 
         public bool IsEmpty()
         {
-            return true;
+            return First == null;
         }
 
 

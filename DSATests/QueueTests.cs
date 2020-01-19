@@ -57,5 +57,26 @@ namespace DSATests
             Assert.AreEqual(10, removedValue);
             Assert.AreEqual(15, q.PeekFirst());
         }
+
+        [Test]
+        public void IsEmpty_EmptyQueue_ReturnsTrue()
+        {
+            Queue q = new Queue();
+
+            bool isEmpty = q.IsEmpty();
+
+            Assert.IsTrue(isEmpty);
+        }
+
+        [Test]
+        public void IsEmpty_NonEmptyQueue_ReturnsFalse()
+        {
+            Queue q = new Queue();
+            q.Enqueue(10);
+
+            bool isEmpty = q.IsEmpty();
+
+            Assert.IsFalse(isEmpty);
+        }
     }
 }
