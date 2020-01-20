@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CTCISolutions
 {
-    public class ChapterThree
+    public class Chapter3
     {
         public Stack SortStack(Stack input)
         {

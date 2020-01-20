@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CTCISolutions
 {
-    public class ChapterOne
+    public class Chapter1
     {
         #region Is Permutation Implementation(s)
         //Keeps track of the frequency of each character in order to tell if the given strings are permutations of one another

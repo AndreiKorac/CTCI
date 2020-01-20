@@ -5,7 +5,7 @@ using DSA;
 
 namespace CTCISolutions
 {
-    public class ChapterTwo
+    public class Chapter2
     {
         //Rudimentary approach; For each node, compare to each other node
         //Inefficient, and using LinkedList methods instead of actually manipulating the data structure

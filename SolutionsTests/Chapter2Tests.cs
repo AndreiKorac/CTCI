@@ -5,12 +5,12 @@ using System;
 
 namespace SolutionsTests
 {
-    public class ChapterTwoTests
+    public class Chapter2Tests
     {
-        private ChapterTwo _testHelper;
-        public ChapterTwoTests()
+        private Chapter2 _testHelper;
+        public Chapter2Tests()
         {
-            _testHelper = new ChapterTwo();
+            _testHelper = new Chapter2();
         }
 
         [SetUp]

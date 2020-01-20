@@ -4,13 +4,13 @@ using DSA;
 using System;
 namespace SolutionsTests
 {
-    public class ChapterThreeTests
+    public class Chapter3Tests
     {
-        private ChapterThree _testHelper;
+        private Chapter3 _testHelper;
 
-        public ChapterThreeTests()
+        public Chapter3Tests()
         {
-            _testHelper = new ChapterThree();
+            _testHelper = new Chapter3();
         }
 
         [SetUp]
