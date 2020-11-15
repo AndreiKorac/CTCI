@@ -11,8 +11,6 @@ namespace CTCISolutions
         //Inefficient, and using LinkedList methods instead of actually manipulating the data structure
         public void RemoveDups(LinkedList inputList)
         {
-            LinkedList outputList = new LinkedList();
-
             for (int i = 0; i < inputList.Count - 1; i++)
             {
                 for(int j = i + 1; j < inputList.Count - 1; j++)

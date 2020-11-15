@@ -4,10 +4,7 @@ using System.Text;
 
 namespace DSA
 {
-    public class Graph
-    {
-    }
-    public class GraphNode
+    public class SortingAlgorithms
     {
 
     }

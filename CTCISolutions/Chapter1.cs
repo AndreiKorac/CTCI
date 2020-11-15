@@ -59,11 +59,11 @@ namespace CTCISolutions
         //Better solution in which we add each character to a HashSet and check for its presence therein
         public bool IsUniqueBetter(string str)
         {
-            HashSet<char> hastSet = new HashSet<char>();
+            HashSet<char> hashSet = new HashSet<char>();
             for (int i = 0; i <= str.Length - 1; i++)
             {
-                if (hastSet.Contains(str[i])) return false;
-                hastSet.Add(str[i]);
+                if (hashSet.Contains(str[i])) return false;
+                hashSet.Add(str[i]);
             }
             return true;
         }
