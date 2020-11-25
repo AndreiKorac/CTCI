@@ -7,15 +7,15 @@ namespace CTCISolutions
     public class Chapter1
     {
         #region Is Permutation Implementation(s)
-        //Keeps track of the frequency of each character in order to tell if the given strings are permutations of one another
-        //ie. if str1 and str2 are permutations, each character will appear with the same frequency in each
+        // Keeps track of the frequency of each character in order to tell if the given strings are permutations of one another
+        // ie. if str1 and str2 are permutations, each character will appear with the same frequency in each
         public bool CheckPermutation(string str1, string str2)
         {
             if (str1.Length != str2.Length)
                 return false;
 
             Dictionary<char, int> charCount = new Dictionary<char, int>();
-            //Keep a count of each character in the string by incrementing a count in a dictionary for that character
+            // Keep a count of each character in the string by incrementing a count in a dictionary for that character
             for (int i = 0; i < str1.Length; i++)
             {
                 if (charCount.ContainsKey(str1[i]))
@@ -27,8 +27,8 @@ namespace CTCISolutions
                     charCount[str1[i]] = 1;
                 }
             }
-            //Go through str2, if the character is present, decrement its count
-            //Thus by the end, the count should be back at 0 for each character if the strings are permutations of one another
+            // Go through str2, if the character is present, decrement its count
+            // Thus by the end, the count should be back at 0 for each character if the strings are permutations of one another
             for (int i = 0; i < str2.Length; i++)
             {
                 if (charCount.ContainsKey(str2[i]))
@@ -43,7 +43,9 @@ namespace CTCISolutions
         #endregion
 
         #region Is Unique Implementation(s)
-        //Naive solution in which we simply loop through each character and compare it with each character that follows it
+        // Naive solution in which we simply loop through each character and compare it with each character that follows it
+        // Time is quadratic, O(n^2), where n is the length of the string
+        // Space is constant O(1), as no data structures or variables are needed
         public bool IsUniqueBasic(string str)
         {
             for (int i = 0; i < str.Length - 1; i++)
@@ -56,7 +58,9 @@ namespace CTCISolutions
             return true;
         }
 
-        //Better solution in which we add each character to a HashSet and check for its presence therein
+        // Better solution in which we add each character to a HashSet and check for its presence therein
+        // Time is linear, O(n), where n is the length of the string
+        // Space is linear, O(n), where n is the length of the string and the hash set must grow with the string
         public bool IsUniqueBetter(string str)
         {
             HashSet<char> hashSet = new HashSet<char>();
@@ -96,9 +100,9 @@ namespace CTCISolutions
         #endregion
 
         #region URLify Implementation(s)
-        //Initial implementation of URLify
-        //Constructs output string by passing through input and appending characters, with '%20' in place of spaces
-        //Does not perform operation in place
+        // Initial implementation of URLify
+        // Constructs output string by passing through input and appending characters, with '%20' in place of spaces
+        // Does not perform operation in place
         public string URLifyStringInitial(string input)
         {
 
@@ -115,8 +119,8 @@ namespace CTCISolutions
             return output.ToString();
         }
 
-        //Attempt at in-place URLify, using char array and length as described in CTCI
-        //input is assumed to contain padding for the URLification ie. "im a string    "
+        // Attempt at in-place URLify, using char array and length as described in CTCI
+        // input is assumed to contain padding for the URLification ie. "im a string    "
         public string URLifyStringInPlace(char[] input, int length)
         {
             int index = input.Length - 1;
